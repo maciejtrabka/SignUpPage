@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="containerSite">
+      <div class="containerLeft">
+        <div class="logoContainer">
+          <div class="logoText">
+            <div class="imgContainer">
+              <img
+                class="logoImg"
+                src="./odin-lined-logo.png"
+                alt="Logo Odin face"
+              />
+            </div>
+            <div class="text">ODIN</div>
+          </div>
+        </div>
+        <div class="photoAuthorTextContainer">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Halie_West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <div class="containerRight">
+        <div class="containerDescription">
+          <div class="description">
+            This is not a real online service! Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+            <br />
+            <br />
+            You know you want to.
+          </div>
+          <div class="letsDoThis">Let's do this!</div>
+        </div>
+
+        <form
+          class="containerInputs"
+          action="https://httpbin.org/post"
+          method="post"
+          id="my-form"
+        >
+          <div class="column">
+            <div class="inputContainer">
+              <label for="firstName">FIRST NAME:</label>
+              <input
+                class="input"
+                type="text"
+                id="firstName"
+                placeholder="Bob"
+                name="firstName"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="email">EMAIL:</label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                placeholder="my@email.com"
+                name="email"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="password">PASSWORD:</label>
+              <input
+                class="input"
+                type="password"
+                id="password"
+                placeholder="***********"
+                name="password"
+                pattern=".{6,}"
+                title="Input should be at least three characters long"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="inputContainer">
+              <label for="lastName">LAST NAME:</label>
+              <input
+                class="input"
+                type="text"
+                id="lastName"
+                placeholder="The Wise"
+                name="lastName"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="phoneNumber">PHONE NUMBER:</label>
+              <input
+                class="input"
+                type="text"
+                id="phoneNumber"
+                placeholder="+423942239"
+                name="phoneNumber"
+                pattern="^\d{9}$"
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="confirmPassword">CONFIRM PASSWORD:</label>
+              <input
+                class="input"
+                type="password"
+                id="confirmPassword"
+                placeholder="***********"
+                name="confirmPassword"
+                pattern="^(?=.*\d)(?=.*[!@#$%^&*]).{3,}$"
+                title="Input should be at least three characters long and contain at least one digit and one special character"
+                required
+              />
+            </div>
+          </div>
+        </form>
+
+        <div class="containerButton">
+          <button type="submit" class="button" form="my-form">
+            Create Account
+          </button>
+
+          <div class="haveAccountText">Already have an account? Log in</div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

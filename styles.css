@@ -1,0 +1,167 @@
+:root {
+  --main-color: black;
+  --secondary-color: rgba(255, 255, 255, 0.845);
+}
+
+* {
+  /* border: 1px solid black; */
+  flex: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+}
+
+.containerSite {
+  display: flex;
+  flex-direction: row;
+  border-color: red;
+  height: 1000px;
+}
+
+.containerLeft {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./leaf.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.logoContainer {
+  flex-grow: 1;
+  align-content: end;
+}
+.logoText {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--secondary-selector);
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.imgContainer {
+  display: flex;
+  flex-grow: 0;
+}
+
+.logoImg {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 120px;
+}
+
+.text {
+  color: var(--secondary-color);
+  display: flex;
+  flex-grow: 0;
+  font-family: myFirstFont;
+  font-size: 80px;
+  height: 60px;
+}
+
+.photoAuthorTextContainer {
+  color: var(--secondary-color);
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: end;
+  justify-content: center;
+}
+
+a {
+  color: var(--secondary-color);
+  flex: 0;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.containerDescription {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  background-color: #f3f6fa;
+}
+.description {
+  align-content: center;
+  padding: 30px;
+}
+.letsDoThis {
+  background-color: white;
+  align-content: end;
+  padding-bottom: 10px;
+  font-size: large;
+}
+
+.containerInputs {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: x-small;
+  flex-grow: 0;
+  padding-left: 10px;
+}
+input {
+  /* border: 10px light; */
+  border-color: #e5e7eb;
+  flex-grow: 0;
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 150px;
+  border-radius: 10%;
+  border-width: 1px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+.passwordInput {
+}
+.column {
+}
+
+.containerButton {
+  background-color: #f3f6fa;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  font-weight: bold;
+  background-color: #596d48;
+  border-radius: 10%;
+  flex-grow: 0;
+  width: 200px;
+  padding: 20px;
+  margin: 30px;
+  border-width: 1px;
+  color: #e5e7eb;
+}
+.haveAccountText {
+  margin: 30px;
+  flex-grow: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Norse-Bold.otf);
+}
