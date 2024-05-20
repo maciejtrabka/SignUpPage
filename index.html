@@ -64,6 +64,7 @@
                 id="firstName"
                 placeholder="Bob"
                 name="firstName"
+                required
               />
             </div>
             <div class="inputContainer">
@@ -74,6 +75,7 @@
                 id="email"
                 placeholder="my@email.com"
                 name="email"
+                required
               />
             </div>
             <div class="inputContainer">
@@ -86,6 +88,7 @@
                 name="password"
                 pattern=".{6,}"
                 title="Input should be at least three characters long"
+                required
               />
             </div>
           </div>
@@ -98,6 +101,7 @@
                 id="lastName"
                 placeholder="The Wise"
                 name="lastName"
+                required
               />
             </div>
             <div class="inputContainer">
@@ -108,6 +112,7 @@
                 id="phoneNumber"
                 placeholder="+423942239"
                 name="phoneNumber"
+                required
                 pattern="^\d{9}$"
               />
             </div>
@@ -119,16 +124,22 @@
                 id="confirmPassword"
                 placeholder="***********"
                 name="confirmPassword"
-                pattern="^(?=.*\d)(?=.*[!@#$%^&*]).{3,}$"
-                title="Input should be at least three characters long and contain at least one digit and one special character"
+                required
                 required
               />
             </div>
           </div>
         </form>
 
+        <!-- title="Input should be at least three characters long and contain at least one digit and one special character" -->
+        <!-- pattern="^(?=.*\d)(?=.*[!@#$%^&*]).{3,}$" -->
         <div class="containerButton">
-          <button type="submit" class="button" form="my-form">
+          <button
+            type="submit"
+            class="button"
+            form="my-form"
+            onclick="passwordValidation(event)"
+          >
             Create Account
           </button>
 
